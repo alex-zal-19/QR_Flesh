@@ -18,13 +18,7 @@ function AdminPage() {
     <div className="app-container">
       <header className="header">
         <h1 className="logo">QR Flash</h1>
-        <a href="/profile" className="profile-link">
-        <img 
-          src={profileImage} 
-          alt="Profile" 
-          className="profile-icon" 
-        />
-        </a>
+        <span className="contact-number">+3803856873927</span>
       </header>
       <div className="main-container">
         <div className="content-container">
