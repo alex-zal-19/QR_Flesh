@@ -72,6 +72,7 @@
   margin: 20px;
   margin-right: 2%;
   flex-grow: 1;
+  background-color: #717171;
 }
 
 
@@ -187,8 +188,8 @@ checkbox-container:hover .custom-checkbox {
  }
 
  .profile-icon {
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   margin-top: 10px;
   margin-bottom: 10px;
  }

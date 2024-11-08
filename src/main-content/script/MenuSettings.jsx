@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../style/MenuSettings.css';
-import '../style/main.css';
+import '../../App.css';
 
 function MenuSettings() {
     const [searchTerm, setSearchTerm] = useState('');
@@ -30,50 +30,52 @@ function MenuSettings() {
     );
   
     return (
-    <div className="pos-table-container">
-      <h2>Номенклатура з POS-системи</h2>
-      <input
-        type="text"
-        className="search-input"
-        placeholder="Пошук за назвою або артикулом страви"
-        value={searchTerm}
-        onChange={handleSearch}
-      />
-      <table className="pos-table">
-        <thead>
-          <tr>
-            <th>Назва</th>
-            <th>Вартість</th>
-            <th>Група</th>
-            <th>Дії</th>
-          </tr>
-        </thead>
-        <tbody>
-          {filteredItems.map((item) => (
-            <tr key={item.id}>
-              <td> 
-                <label className="switch" >
-                  <input
-                    type="checkbox"
-                    checked={item.selected}
-                    onChange={() => handleSelect(item.id)}
-                  />
-                  <span className="slider"/>
-                </label>
-                <span>{item.name}</span>
-                
-              </td>
-              <td>{item.price} ₴</td>
-              <td>{item.group}</td>
-              <td>
-                <button className="action-btn">+</button>
-                <button className="action-btn edit">✎</button>
-                <button className="action-btn delete">🗑️</button>
-              </td>
+      <div className="main-container">
+        <div className="pos-table-container">
+        <h2>Номенклатура з POS-системи</h2>
+        <input
+          type="text"
+          className="search-input"
+          placeholder="Пошук за назвою або артикулом страви"
+          value={searchTerm}
+          onChange={handleSearch}
+        />
+        <table className="pos-table">
+          <thead>
+            <tr>
+              <th>Назва</th>
+              <th>Вартість</th>
+              <th>Група</th>
+              <th>Дії</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {filteredItems.map((item) => (
+              <tr key={item.id}>
+                <td> 
+                  <label className="switch" >
+                    <input
+                      type="checkbox"
+                      checked={item.selected}
+                      onChange={() => handleSelect(item.id)}
+                    />
+                    <span className="slider"/>
+                  </label>
+                  <span>{item.name}</span>
+                  
+                </td>
+                <td>{item.price} ₴</td>
+                <td>{item.group}</td>
+                <td>
+                  <button className="action-btn">+</button>
+                  <button className="action-btn edit">✎</button>
+                  <button className="action-btn delete">🗑️</button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

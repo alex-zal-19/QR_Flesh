@@ -8,7 +8,7 @@ import MenuSettings from './MenuSettings';
 import profileImage from '../../img/Profile.svg';
 
 import '../style/AdminPage.css';
-import '../style/main.css';
+import '../../App.css';
 
 
 function AdminPage() {
@@ -26,30 +26,32 @@ function AdminPage() {
         />
         </a>
       </header>
-      <div className="content-container">
-        <aside className="sidebar">
-          <button className="sidebar-button" onClick={() => 
-            setActiveComponent('profile')}>
-            Профіль закладу
-          </button>
-          <button className="sidebar-button" onClick={() => 
-            setActiveComponent('tables')}>
-            Столи та QR-коди
+      <div className="main-container">
+        <div className="content-container">
+          <aside className="sidebar">
+            <button className="sidebar-button" onClick={() => 
+              setActiveComponent('profile')}>
+              Профіль закладу
             </button>
-          <button className="sidebar-button">Адміністратори (not work) </button>
-          <button className="sidebar-button">Банківські рахунки (not work) </button>
-          <button className="sidebar-button"onClick={() => 
-            setActiveComponent('MenuSettings')}>
-            Налаштування меню
-            </button>
-          <button className="sidebar-button">Редактор меню (not work) </button>
-        </aside>
-        <main className="main-content">
-          {activeComponent === 'profile' && <EstablishmentSettings />}
-          {activeComponent === 'tables' && <TableSettings />}
-          {activeComponent === 'MenuSettings' && <MenuSettings />}
-          {!activeComponent && <p>Виберіть налаштування зі списку</p>}
-        </main>
+            <button className="sidebar-button" onClick={() => 
+              setActiveComponent('tables')}>
+              Столи та QR-коди
+              </button>
+            <button className="sidebar-button">Адміністратори (not work) </button>
+            <button className="sidebar-button">Банківські рахунки (not work) </button>
+            <button className="sidebar-button"onClick={() => 
+              setActiveComponent('MenuSettings')}>
+              Налаштування меню
+              </button>
+            <button className="sidebar-button">Редактор меню (not work) </button>
+          </aside>
+          <main className="main-content">
+            {activeComponent === 'profile' && <EstablishmentSettings />}
+            {activeComponent === 'tables' && <TableSettings />}
+            {activeComponent === 'MenuSettings' && <MenuSettings />}
+            {!activeComponent && <p>Виберіть налаштування зі списку</p>}
+          </main>
+        </div>
       </div>
     </div>
   );

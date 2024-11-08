@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react';
 import '../style/TableSettings.css';
-import '../style/main.css';
+import '../../App.css';
 
 function TableSettings() {
   const [halls, setHalls] = useState(['Зал 1', 'Зал 2']);
@@ -18,7 +18,7 @@ function TableSettings() {
   };
 
   return (
-    <div>
+    <div className= "main-container" >
       <div className="table-settings-container">
         <h2>Налаштування залів та столів</h2>
         
