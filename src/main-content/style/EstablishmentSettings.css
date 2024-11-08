@@ -1,0 +1,56 @@
+.settings-container {
+    padding: 20px;
+}
+
+.menu-link {
+  display: block;
+  font-weight: bold;
+  color: #dddddd;
+  margin-bottom: 20px;
+  text-decoration: none;
+}
+
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+.settings-field {
+  margin-bottom: 15px;
+}
+
+.settings-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.settings-field input[type="file"],
+.settings-field select,
+.settings-field textarea::placeholder{
+  color: #bbbbbb;
+}
+.settings-field input[type="text"]::placeholder{
+  color: #bbbbbb;
+}
+
+.settings-field input[type="text"],
+.settings-field textarea,
+.settings-field select,
+.settings-field input[type="file"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #5c5c5c;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #717171;
+
+}
+
+
+.settings-field textarea {
+  resize: vertical;
+}
+
+.table-item select {
+  width: 100px;
+}
