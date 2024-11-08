@@ -1,17 +1,16 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 
 .app-container {
   font-family: Arial, sans-serif;
   color: #dddddd;
-  background-color: #717171
+  background-color: #555555;
+}
+
+.content-container {
+  display: flex;
 }
 
 .header {
-  background-color: #3aaf00;
+  background-color: #34bc36;
   
   color: white;
   padding: 0.5%;
@@ -31,9 +30,6 @@
   font-size: 14px;
 }
 
-.content-container {
-  display: flex;
-}
 
 .sidebar {
   background-color: #5c5c5c;
@@ -51,11 +47,13 @@
   padding: 10px;
   width: 100%;
   background-color: #4a4a4a;
-  border: 3px solid #5c5c5c;
+  border: 3px solid #555555;
   border-radius: 10px; 
   color: #dddddd;
   font-size: 14px;
   cursor: pointer;
+  text-align: left;
+  padding-left: 20px;
 }
 
 
@@ -186,4 +184,11 @@ checkbox-container:hover .custom-checkbox {
  
  .switch input[type="checkbox"]:checked:active + .slider::after {
   transform: translateX(calc(var(--button-width) - var(--toggle-wider) - var(--button-toggle-offset)));
+ }
+
+ .profile-icon {
+  height: 60px;
+  width: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
  }

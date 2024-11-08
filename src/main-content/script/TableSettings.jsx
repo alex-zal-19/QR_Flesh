@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import '../style/TableSettings.css';
+import '../style/main.css';
 
 function TableSettings() {
   const [halls, setHalls] = useState(['Зал 1', 'Зал 2']);

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../style/MenuSettings.css';
-
+import '../style/main.css';
 
 function MenuSettings() {
     const [searchTerm, setSearchTerm] = useState('');

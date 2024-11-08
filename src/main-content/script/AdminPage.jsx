@@ -5,8 +5,10 @@ import { useState } from 'react';
 import TableSettings from './TableSettings';
 import EstablishmentSettings from './EstablishmentSettings';
 import MenuSettings from './MenuSettings';
+import profileImage from '../../img/Profile.svg';
 
 import '../style/AdminPage.css';
+import '../style/main.css';
 
 
 function AdminPage() {
@@ -16,7 +18,13 @@ function AdminPage() {
     <div className="app-container">
       <header className="header">
         <h1 className="logo">QR Flash</h1>
-        <span className="contact-number">+3803856873927</span>
+        <a href="/profile" className="profile-link">
+        <img 
+          src={profileImage} 
+          alt="Profile" 
+          className="profile-icon" 
+        />
+        </a>
       </header>
       <div className="content-container">
         <aside className="sidebar">
