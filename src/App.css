@@ -12,13 +12,15 @@
   
   .header {
     background-color: #3aaf00;
+    
     color: white;
     padding: 0.5%;
     padding-inline: 2%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
+}
+
   
   .logo {
     font-weight: 100;
