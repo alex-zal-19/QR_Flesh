@@ -1,66 +1,63 @@
-
-
 .pos-table-container {
-    background-color: #717171;
-    padding: 20px;
-    border-radius: 8px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 10px;
-  }
-  
-  .search-input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #5c5c5c;
-    border-radius: 4px;
-    background-color: #717171;
-  }
-  .search-input::placeholder{
-    color: #bbbbbb;
-  }
-  
-  .pos-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .pos-table th, .pos-table td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #5c5c5c;
-  }
-  
-  .pos-table th {
-    font-weight: bold;
-    color: #dddddd;
-  }
-  .pos-table td span{
-    margin-inline: 20px;
-  }
+  background-color: #717171;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 auto;
+}
 
-  .action-btn {
-    margin: 0 5px;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #3aaf00;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .action-btn.edit {
-    background-color: #6ca0dc;
-    color: white;
-  }
-  
-  .action-btn.delete {
-    background-color: #ff6b6b;
-    color: white;
-  }
-  
+h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #5c5c5c;
+  border-radius: 4px;
+  background-color: #717171;
+}
+.search-input::placeholder{
+  color: #bbbbbb;
+}
+
+.pos-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pos-table th, .pos-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #5c5c5c;
+}
+
+.pos-table th {
+  font-weight: bold;
+  color: #dddddd;
+}
+.pos-table td span{
+  margin-inline: 20px;
+}
+
+.action-btn {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3aaf00;
+  cursor: pointer;
+  color: white;
+}
+
+.action-btn.edit {
+  background-color: #6ca0dc;
+  color: white;
+}
+
+.action-btn.delete {
+  background-color: #ff6b6b;
+  color: white;
+}

@@ -1,18 +1,18 @@
 
 import React from 'react';
 
-import AdminPage from './main-content/script/AdminPage';
+
+import LoginPage from './main-content/script/LoginPage';
  // Підключення CSS
 import './App.css';
 
 
 
 function App() {
-
-
   return (
-      <AdminPage/>
+      <LoginPage/>
   );
 }
+
 
 export default App;
