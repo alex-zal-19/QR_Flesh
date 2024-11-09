@@ -1,16 +1,24 @@
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import React from 'react';
 
 
+// Підключення JSX
 import LoginPage from './main-content/script/LoginPage';
- // Підключення CSS
+import AdminPage from './main-content/script/AdminPage';
+
+// Підключення CSS
 import './App.css';
 
 
 
 function App() {
   return (
-      <LoginPage/>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />       
+        <Route path="/Admin" element={<AdminPage />} /> 
+      </Routes>
+    </Router>
   );
 }
 

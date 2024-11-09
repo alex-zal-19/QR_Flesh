@@ -23,7 +23,7 @@ padding: .5em 1em;
 .input-icon {
 height: 1em;
 width: 1em;
-fill: white;
+fill: #dddddd;
 }
 
 .input-field {
@@ -31,6 +31,7 @@ background: none;
 border: none;
 outline: none;
 width: 100%;
+color: white;
 
 }
 
