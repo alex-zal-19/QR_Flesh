@@ -44,7 +44,7 @@ font-weight: 500;
 }
 
 /*Buttons*/
-.btn {
+.button {
 margin: 1rem;
 font-weight: bold;
 font-size: .8em;
@@ -63,24 +63,4 @@ transition: color .3s ease-out;
 .field input:focus::placeholder {
 opacity: 0;
 transition: opacity .3s;
-}
-
-.btn {
-background-color: #4a4a4a;
-border: 3px solid #555555;
-border-radius: 10px; 
-color: #dddddd;
-font-size: 14px;
-cursor: pointer;
-text-align: left;
-}
-
-
-.btn:hover {
-background-color: #3aaf00;
-color: white;
-}
-
-.btn:active {
-background-color: #339900;
 }
