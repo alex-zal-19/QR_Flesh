@@ -1,3 +1,6 @@
+
+/* Button */
+
 .button{
     background-color: #4a4a4a;
     border: 3px solid #555555;
@@ -6,6 +9,8 @@
     font-size: 14px;
     cursor: pointer;
     text-align: left;
+    border-color: #339900;
+    border-width: 2px;
 }
 
 .button:hover {
@@ -16,4 +21,18 @@
 
 .button:active {
     background-color: #339900;
+}
+
+/* Input */
+
+.search-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #5c5c5c;
+    border-radius: 4px;
+    background-color: #717171;
+}
+.search-input::placeholder{
+    color: #bbbbbb;
 }

@@ -5,7 +5,7 @@ import { useState } from 'react';
 import TableSettings from './TableSettings';
 import EstablishmentSettings from './EstablishmentSettings';
 import MenuSettings from './MenuSettings';
-import Button from '../../components/script/button';
+import {Button} from '../../components/script/components';
 
 import '../style/AdminPage.css';
 import '../../App.css';
