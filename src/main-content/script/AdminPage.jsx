@@ -5,7 +5,7 @@ import { useState } from 'react';
 import TableSettings from './TableSettings';
 import EstablishmentSettings from './EstablishmentSettings';
 import MenuSettings from './MenuSettings';
-
+import Button from '../../components/script/button';
 
 import '../style/AdminPage.css';
 import '../../App.css';
@@ -23,21 +23,21 @@ function AdminPage() {
       <div className="main-container">
         <div className="content-container">
           <aside className="sidebar">
-            <button className="sidebar-button" onClick={() => 
+            <Button className="sidebar-button" onClick={() => 
               setActiveComponent('profile')}>
               Профіль закладу
-            </button>
-            <button className="sidebar-button" onClick={() => 
+            </Button>
+            <Button className="sidebar-button" onClick={() => 
               setActiveComponent('tables')}>
               Столи та QR-коди
-              </button>
-            <button className="sidebar-button">Адміністратори (not work) </button>
-            <button className="sidebar-button">Банківські рахунки (not work) </button>
-            <button className="sidebar-button"onClick={() => 
+              </Button>
+            <Button className="sidebar-button">Адміністратори (not work) </Button>
+            <Button className="sidebar-button">Банківські рахунки (not work) </Button>
+            <Button className="sidebar-button" onClick={() => 
               setActiveComponent('MenuSettings')}>
               Налаштування меню
-              </button>
-            <button className="sidebar-button">Редактор меню (not work) </button>
+              </Button>
+            <Button className="sidebar-button" >Редактор меню (not work) </Button>
           </aside>
           <main className="main-content">
             {activeComponent === 'profile' && <EstablishmentSettings />}

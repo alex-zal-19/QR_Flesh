@@ -4,9 +4,10 @@ import React from 'react';
 import '../style/button.css';
 
 
-function Button({ children, onClick }) {
+function Button({className, children, onClick }) {
+    className = "button" + ' ' + className
     return (
-        <button class="button" onClick={onClick} >{children} </button>
+        <button className = { className} onClick={onClick} >{children} </button>
     );
 }
 
