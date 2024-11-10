@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 // Підключення CSS
 import '../style/components.css';
@@ -12,8 +12,6 @@ export function Button({className, children, onClick }) {
         <button className = { className} onClick={onClick} >{children} </button>
     );
 }
-
-
 
 
 export default Components;
