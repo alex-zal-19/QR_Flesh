@@ -13,13 +13,27 @@ export function Button({className, children, onClick }) {
     );
 }
 
-export function TimeInput({className,  }) {
+export function TimeInput({className }) {
     className = "timeInput" + ' ' + className
     return (
         <input type = "time" className = { className}></input>
     );
 }
-
+export function Slider ({className, children, checked, onChange }) {
+    className = "slider" + ' ' + className
+    return (
+    <label className="switch">
+        {children} 
+        <input 
+            type="checkbox" 
+            checked={checked}
+            onChange={onChange}
+        /> 
+        
+        <span className="slider"/>
+      </label>
+    );
+}
 
 
 export default Components;

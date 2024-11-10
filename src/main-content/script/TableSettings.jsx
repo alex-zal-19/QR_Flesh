@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import '../style/TableSettings.css';
 import '../../App.css';
-
+import { Slider } from '../../components/script/components';
 
 function TableSettings() {
   const [halls, setHalls] = useState(['Зал 1', 'Зал 2']);
@@ -35,12 +35,7 @@ function TableSettings() {
         
         {/* Перемикач для вимкнення столів у залі */}
         <div className="settings-field">
-          <label  className="switch">
-            Вимкнути всі столи у залі
-            <input type="checkbox" /> 
-            <span className="slider"/>
-          </label>
-          
+            <Slider> Перемикач для вимкнення столів у залі </Slider>   
         </div>
 
         {/* Список столів */}
@@ -50,15 +45,9 @@ function TableSettings() {
             {tables.map((table, index) => (
               <li key={index} className="table-item">
                 <span>Номер стола: {table.number}</span>
-                <label className="switch">
-                  Вимкнути стіл
-                  <input
-                    type="checkbox"
-                    checked={!table.enabled}
-                    onChange={() => toggleTableEnabled(index)}
-                  />
-                  <span className="slider"/>
-                </label>
+                <Slider checked={!table.enabled} onChange={() => toggleTableEnabled(index)} > 
+                    Вимкнути стіл 
+                </Slider> 
                 <span>{table.qrCode}</span>
               </li>
             ))}

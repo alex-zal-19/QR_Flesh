@@ -1,5 +1,6 @@
 import React from 'react';
 import { TimeInput } from '../../components/script/components';
+import { Slider } from '../../components/script/components';
 
 import '../style/EstablishmentSettings.css';
 import '../../App.css';
@@ -36,10 +37,7 @@ function EstablishmentSettings() {
                     	<ul>
 							<li className="table-item">
 								<span className="table-item-span">Понеділок</span>
-								<label className="switch">
-									<input type="checkbox"/>
-									<span className="slider"/>
-								</label>
+									<Slider/>
 								<span className="table-item-span">Відкриття</span>
 								<div name="select">
 									<TimeInput/>
@@ -51,10 +49,7 @@ function EstablishmentSettings() {
 							</li>
 							<li className="table-item">
 								<span className="table-item-span">Вівторок</span>
-								<label className="switch">
-									<input type="checkbox"/>
-									<span className="slider"/>
-								</label>
+									<Slider/>
 								<span className="table-item-span">Відкриття</span>
 								<div name="select">
 									<TimeInput/>
@@ -66,10 +61,7 @@ function EstablishmentSettings() {
 							</li>
 							<li className="table-item">
 								<span className="table-item-span">Середа</span>
-								<label className="switch">
-								<input type="checkbox"/>
-								<span className="slider"/>
-								</label>
+									<Slider/>
 								<span className="table-item-span">Відкриття</span>
 								<div name="select">
 									<TimeInput/>
@@ -81,10 +73,7 @@ function EstablishmentSettings() {
 							</li>
 							<li className="table-item">
 								<span className="table-item-span">Четвер</span>
-								<label className="switch">
-								<input type="checkbox"/>
-								<span className="slider"/>
-								</label>
+									<Slider/>
 								<span className="table-item-span">Відкриття</span>
 								<div name="select">
 									<TimeInput/>
@@ -96,10 +85,7 @@ function EstablishmentSettings() {
 							</li>
 							<li className="table-item">
 								<span className="table-item-span">П'ятниця</span>
-								<label className="switch">
-								<input type="checkbox"/>
-								<span className="slider"/>
-								</label>
+									<Slider/>
 								<span className="table-item-span">Відкриття</span>
 								<div name="select">
 									<TimeInput/>
@@ -111,10 +97,7 @@ function EstablishmentSettings() {
 							</li>
 							<li className="table-item">
 								<span className="table-item-span">Субота</span>
-								<label className="switch">
-								<input type="checkbox"/>
-								<span className="slider"/>
-								</label>
+									<Slider/>
 								<span className="table-item-span">Відкриття</span>
 								<div name="select">
 									<TimeInput/>
@@ -126,10 +109,7 @@ function EstablishmentSettings() {
 							</li>
 							<li className="table-item">
 								<span className="table-item-span">Неділя</span>
-								<label className="switch">
-								<input type="checkbox"/>
-								<span className="slider"/>
-								</label>
+									<Slider/>
 								<span className="table-item-span">Відкриття</span>
 								<div name="select">
 									<TimeInput/>

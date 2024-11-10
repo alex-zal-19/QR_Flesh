@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { Slider } from '../../components/script/components';
+
 import '../style/MenuSettings.css';
 import '../../App.css';
 
@@ -54,14 +56,7 @@ function MenuSettings() {
             {filteredItems.map((item) => (
               <tr key={item.id}>
                 <td> 
-                  <label className="switch" >
-                    <input
-                      type="checkbox"
-                      checked={item.selected}
-                      onChange={() => handleSelect(item.id)}
-                    />
-                    <span className="slider"/>
-                  </label>
+                  <Slider/>       
                   <span>{item.name}</span>
                   
                 </td>
