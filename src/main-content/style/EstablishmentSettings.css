@@ -2,13 +2,7 @@
     padding: 20px;
 }
 
-.menu-link {
-  display: block;
-  font-weight: bold;
-  color: #dddddd;
-  margin-bottom: 20px;
-  text-decoration: none;
-}
+
 
 .menu-link:hover {
   text-decoration: underline;

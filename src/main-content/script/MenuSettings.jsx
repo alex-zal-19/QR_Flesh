@@ -31,6 +31,7 @@ function MenuSettings() {
   
     return (
       <div className="main-container">
+        <a href="/menu" className="menu-link">Переглянути меню закладу</a>
         <div className="pos-table-container">
         <h2>Номенклатура з POS-системи</h2>
         <input

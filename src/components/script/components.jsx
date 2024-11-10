@@ -13,6 +13,12 @@ export function Button({className, children, onClick }) {
     );
 }
 
+export function TimeInput({className,  }) {
+    className = "timeInput" + ' ' + className
+    return (
+        <input type = "time" className = { className}></input>
+    );
+}
 
 
 
